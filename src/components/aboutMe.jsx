@@ -16,22 +16,20 @@ export default function AboutMe() {
     })
     }, [url]);
 
+    const title = "Olive Daly, Software Developer"
+    const description = "Welcome to my portfolio! Below you'll find an arrangement of tiles that represent some of my projects. Click on a tile to learn more about its respective project, or click on the center tile to learn more about me.";
     console.log(info)
     return(
-        <Container fluid className="my-5">
-            <Card>
+        <Container fluid className="mb-5">
+            <Card id="about" className="about-me">
                 <Row>
-                    <Col xs={12} md={4}>
-                        <Image src={info.image} style={{width:"100%",aspectRatio:"1", objectFit:"cover"}}>
-                        </Image>
-                    </Col>
-                    <Col xs={12} md={8}>
+                    <Col>
                         <Card.Body>
                             <Card.Title>
-                                {info.title}
+                                {title}
                             </Card.Title>
                             <Card.Text>
-                                I am a software engineer with a background in electrical engineering. I have experience in a variety of languages and frameworks, including C++, C#, Python, Java, JavaScript, React, and Node. I am currently working on a variety of projects, including a website for a local non-profit, a website for a local restaurant, and a website for a local church.
+                                {description}
                             </Card.Text>
                         </Card.Body>
                     </Col>

@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import AboutMe from "./aboutMe";
 import Header from "./header";
 import Footer from "./footer";
+import { Col, Row } from "react-bootstrap";
 export default function PortfolioPage(props) {
 
 
@@ -86,10 +87,10 @@ export default function PortfolioPage(props) {
     <>
      <Header></Header>
      <Container className="portfolio-content">
-      {/* <AboutMe /> */}
-      <Container fluid>
-        <div className={"parent " + animation}>{elements}</div>
-        <Container fluid className="portfolio-controls">
+      <AboutMe />
+      <Container fluid className="mt-5">
+        <div className={"parent " + animation} id="portfolio">{elements}</div>
+        <Container fluid className="portfolio-controls rounded">
           <div className="portfolio-controls-left">
             <Button variant="outline-dark" className="portfolio-controls-button" onClick={handlePrev}>
               <i className="fas fa-chevron-left">Previous</i>
@@ -107,22 +108,30 @@ export default function PortfolioPage(props) {
         <Modal.Header closeButton>
           <Modal.Title as="h1">{selected.title}</Modal.Title>
           <br></br>
+          <img className="modal-image" src={selected.image}></img>
+          {selected.imageBeta ? <img className="modal-image-hover" src={selected.imageBeta}></img> : ""}
           <br></br>
-            <Modal.Title as="p">{selected.technologies ? selected.technologies.map((tech) => tech) : ""}</Modal.Title>
+            <Modal.Title style={{display:"flex", justifyContent:"space-evenly", flexWrap:"wrap"}} as="ul">{selected.technologies ? selected.technologies.map((tech) => <li className="mx-3">{tech}</li>) : ""}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{selected.description}
-        <br></br>
-        <a href={selected.repo}>Code</a>
-        <br></br>
-        <a href={selected.live}>Live</a>
         </Modal.Body>
         <Modal.Footer>
+          <Row className="justify-content-center">
+          <Col>
+          {selected.repo ? <a href={selected.repo}>Code</a> : ""}
+          </Col>
+          <Col>
+          {selected.live ? <a href={selected.live}>Live</a> : ""}
+          </Col>
+          </Row>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>
       </Modal></Container>
-      <Footer></Footer>
+      <Footer>
+
+      </Footer>
     </>
   );
 }

@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
 body {
     transition: background-image 0.5s ;
+    font-family: "IBM Plex Mono", monospace !important;
+    font-size: 1.5rem;
+}
+.navbar {
+    height: 8em;
 }
 
 .day {
@@ -20,10 +30,13 @@ body {
 }
 
 .portfolio-content {
-    padding-top: 15%;
+    padding-top: 1em;
     margin:auto;
     transform: translate(0%)
 }
+
+
+
 .portfolio-content::-webkit-scrollbar {
     display: none;
 }
@@ -33,7 +46,7 @@ body {
         transform: rotate(45deg);
     }
     75% {
-        transform: rotate(-45deg);
+        transform: rotate(25deg);
     }
     100% {
         transform: rotate(45deg);
@@ -45,7 +58,7 @@ body {
         transform: rotate(45deg);
     }
     75% {
-        transform: rotate(135deg);
+        transform: rotate(65deg);
     }
     100% {
         transform: rotate(45deg);
@@ -66,13 +79,14 @@ body {
 
 .portfolio-controls {
     display: flex;
-    justify-content: center;
+    position: relative;
+    top:1em;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    width: 100%;
     margin-top: 20%;
-    max-width: 1000px;
-    padding: 0 20px;
+    width: 100%;
+    padding: 20px;
 }
 
 .day .portfolio-controls{
@@ -81,6 +95,16 @@ body {
 
 .night .portfolio-controls {
     background-color: black;
+    color: lightgray;
+}
+
+.night .portfolio-controls button {
+    color: lightgray;
+}
+
+footer {
+    padding-top:2em;
+    height:30em;
 }
 
 .day footer{
@@ -89,4 +113,35 @@ body {
 
 .night footer {
     background-color: black;
+}
+
+.modal-dialog img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.modal-dialog {
+    max-width: 1000px !important;
+    margin: 1.75rem auto;
+}
+
+.day .portfolio-content {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.night .portfolio-content {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#about {
+    padding-top: 2em;
+    position: relative;
+    bottom:2.5em;
+    border: 0px;
+    margin-bottom:15%;
 }

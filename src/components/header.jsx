@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Navbar, Button, Nav } from "react-bootstrap";
+import { Navbar, Button, Nav, Container } from "react-bootstrap";
 
 export default function Header() {
 
@@ -20,7 +20,8 @@ export default function Header() {
     }
     return (
         <Navbar bg={mode === "day" ? "white" : "black"} variant={mode === "day" ? "light" : "dark"}>
-            <Navbar.Brand href="#home">
+            <Container>
+                <Navbar.Brand href="#home">
                 <img src={mode === "day" ? "/assets/images/blacklogo-transparent.svg" : "/assets/images/whitelogo-transparent.svg"} height="60" ></img>
             </Navbar.Brand>
             <Nav>
@@ -30,6 +31,8 @@ export default function Header() {
                 <Nav.Link href="#contact">Contact</Nav.Link>
                 <Button onClick={toggleNightMode}>{mode === "day" ? "Night Mode" : "Day Mode"}</Button>
             </Nav>
+            </Container>
+            
             
         </Navbar>
     )

@@ -4,9 +4,9 @@
     },
     {
         "title": "M-M.Institute",
-        "description": "A MERN stack microblogging platform",
+        "description": "A MERN stack microblogging platform. Users have the ability to register accounts, create and tag posts, upload images, follow other users for their personalized feed, like posts, and quote other posts in their own. Makes use of a React Router frontend which interacts with a REST API(MongoDB, Express, Node) backend, called M-M.Api.",
         "image": "/assets/images/m-minstitute-alpha.png",
-        "repo":"",
+        "repo":"https://github.com/the-neighbor/M-M.Institute.2023",
         "live":"",
         "technologies": [
             "React",
@@ -20,38 +20,21 @@
     },
     {
         "title": "Python-Chess",
-        "description": "A command line implementation of chess in Python 3",
+        "description": "A command line implementation of chess in Python 3. Users have the ability to play locally against another human opponent, against a computer opponent, or to watch the computer play against itself. The computer opponent makes use of a recursive search algorithm and scoring heuristic in order to try and pick the move that results in the most advantageous board state. Players also have the ability to save and load games.",
         "image": "/assets/images/chess-alpha.png",
-        "imageBeta": "/assets/images/chess-beta.png"
+        "imageBeta": "/assets/images/chess-beta.png",
+        "repo":"https://github.com/the-neighbor/Python-Chess"
     },
     {
         "title": "M-M.GridGen",
-        "description": "A generator for randomized grid layouts",
-        "image": "https://raw.githubusercontent.com/the-neighbor/M-M.GridGenAPI/main/public/assets/wide.jpg"
+        "description": "A generator for randomized grid layouts. When provided with a width, height, and number of pieces, the generator will make a request to the server. The server then runs a recursive backtracking algorithm to find an arrangement of that many rectangular pieces that completely fills the grid without any overlaps. The pieces are shuffled each time the generator is run, resulting in different arrangements each time, even with the same input parameters. The generator also provides the user with the CSS necessary to implement the generated grid layout, and a visual preview of said layout.",
+        "image": "https://raw.githubusercontent.com/the-neighbor/M-M.GridGenAPI/main/public/assets/wide.jpg",
+        "repo":"https://github.com/the-neighbor/M-M.GridGenAPI"
     },
     {
         "title": "M-M.CookBook",
-        "description": "A community recipe tracker",
-        "image": "https://raw.githubusercontent.com/the-neighbor/M-M.RecipeTracker/main/images/alpha.png"
-    },
-    {
-        "title": "M-M.API",
-        "description": "A simple markdown Previewer for the web",
-        "image": "https://picsum.photos/330/110"
-    },
-    {
-        "title": "Markdown Previewer",
-        "description": "A simple markdown Previewer for the web",
-        "image": "https://picsum.photos/200/100"
-    },
-    {
-        "title": "Pomodoro Clock",
-        "description": "A simple markdown Previewer for the web",
-        "image": "https://picsum.photos/300/200"
-    },
-    {
-        "title": "Pomodoro Clock",
-        "description": "A simple markdown Previewer for the web",
-        "image": "https://picsum.photos/300/200"
+        "description": "A community recipe tracker. Users have the ability to view, add, edit, or delete recipes, their instructions, and their ingredients. The application consists of a Bootstrap frontend which interacts with a MySQL database through a REST API made using Node and Express. The application also makes uses of googles custom search engine API to provide users with images of each recipe automatically in the event that one is not provided manually with the recipe submission.",
+        "image": "https://raw.githubusercontent.com/the-neighbor/M-M.RecipeTracker/main/images/alpha.png",
+        "repo":"https://github.com/the-neighbor/M-M.RecipeTracker"
     }
 ]
