@@ -1,0 +1,92 @@
+body {
+    transition: background-image 0.5s ;
+}
+
+.day {
+    background-color: black;
+    /* background-image: url("/assets/images/is the sun coming back-web.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/IMG_0135.jpeg");
+    background-position: center;
+}
+
+.night {
+    background-color: black;
+    background-image: url("/assets/images/is the sun coming back-web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-content {
+    padding-top: 15%;
+    margin:auto;
+    transform: translate(0%)
+}
+.portfolio-content::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes rotateLeft {
+    0% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotateRight {
+    0% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(135deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+.rotateLeft {
+    animation: rotateLeft 0.5s ease-in-out;
+}
+.rotateRight {
+    animation: rotateRight 0.5s ease-in-out;
+}
+
+.parent {
+    transform:rotate(45deg);
+    width:70%;
+}
+
+.portfolio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.day .portfolio-controls{
+    background-color: white;
+}
+
+.night .portfolio-controls {
+    background-color: black;
+}
+
+.day footer{
+    background-color: white;
+}
+
+.night footer {
+    background-color: black;
+}

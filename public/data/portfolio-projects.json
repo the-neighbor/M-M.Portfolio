@@ -1,0 +1,57 @@
+[
+    {
+        "title":"blank"
+    },
+    {
+        "title": "M-M.Institute",
+        "description": "A MERN stack microblogging platform",
+        "image": "/assets/images/m-minstitute-alpha.png",
+        "repo":"",
+        "live":"",
+        "technologies": [
+            "React",
+            "Node",
+            "Express",
+            "MongoDB",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
+    },
+    {
+        "title": "Python-Chess",
+        "description": "A command line implementation of chess in Python 3",
+        "image": "/assets/images/chess-alpha.png",
+        "imageBeta": "/assets/images/chess-beta.png"
+    },
+    {
+        "title": "M-M.GridGen",
+        "description": "A generator for randomized grid layouts",
+        "image": "https://raw.githubusercontent.com/the-neighbor/M-M.GridGenAPI/main/public/assets/wide.jpg"
+    },
+    {
+        "title": "M-M.CookBook",
+        "description": "A community recipe tracker",
+        "image": "https://raw.githubusercontent.com/the-neighbor/M-M.RecipeTracker/main/images/alpha.png"
+    },
+    {
+        "title": "M-M.API",
+        "description": "A simple markdown Previewer for the web",
+        "image": "https://picsum.photos/330/110"
+    },
+    {
+        "title": "Markdown Previewer",
+        "description": "A simple markdown Previewer for the web",
+        "image": "https://picsum.photos/200/100"
+    },
+    {
+        "title": "Pomodoro Clock",
+        "description": "A simple markdown Previewer for the web",
+        "image": "https://picsum.photos/300/200"
+    },
+    {
+        "title": "Pomodoro Clock",
+        "description": "A simple markdown Previewer for the web",
+        "image": "https://picsum.photos/300/200"
+    }
+]
