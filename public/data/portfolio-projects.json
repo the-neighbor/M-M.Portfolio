@@ -29,7 +29,8 @@
         "title": "M-M.GridGen",
         "description": "A generator for randomized grid layouts. When provided with a width, height, and number of pieces, the generator will make a request to the server. The server then runs a recursive backtracking algorithm to find an arrangement of that many rectangular pieces that completely fills the grid without any overlaps. The pieces are shuffled each time the generator is run, resulting in different arrangements each time, even with the same input parameters. The generator also provides the user with the CSS necessary to implement the generated grid layout, and a visual preview of said layout.",
         "image": "https://raw.githubusercontent.com/the-neighbor/M-M.GridGenAPI/main/public/assets/wide.jpg",
-        "repo":"https://github.com/the-neighbor/M-M.GridGenAPI"
+        "repo":"https://github.com/the-neighbor/M-M.GridGenAPI",
+        "live":"https://m-m-gridgen.herokuapp.com"
     },
     {
         "title": "M-M.CookBook",
