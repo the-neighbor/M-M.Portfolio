@@ -1,6 +1,7 @@
 {
+        "aboutMe":true,
         "title":"About Me, Olive Daly",
         "subtitle":"A little bit about me",
-        "description":"I am a software engineer and artist who is passionate about learning, developing my technical and creative skills, building things, and finding solutions to interesting and engaging technical challenges.",
+        "description":"I am a software engineer and artist who is passionate about learning, developing my technical and creative skills, building things, and finding solutions to interesting and engaging technical challenges. A long time enthusiast about technology, I learned to program while staying at the Silicon Valley campus of Ecole 42, initially targeting UNIX systems with Bash scripting and C. Shortly after I began using Python and Ruby in my own time, for my personal projects, and also for teaching others to code. I then moved on to teach myself full stack web development, learning PHP, HTML, CSS, JavaScript, Node, Express, and React, as well as relational(PostgreSQL) and non-relational(MongoDB) databases, and these skills have been expanded upon and improved through my experience as a Teaching Assistant for Full Stack Web Development bootcamps. Besides that, working as a GuideWire Developer and consultant has introduced me to the Java and Gosu ecosystems, and tools like Spring and Spring Boot. In my own time, I like to share my knowledge with others, work on my own game development projects, create art, study languages, and play guitar. I am currently looking for a new role as a Software Engineer, and am open to remote work.",
         "image": "/assets/images/self-1.jpg"
 }

@@ -108,8 +108,8 @@ export default function PortfolioPage(props) {
         <Modal.Header closeButton>
           <Modal.Title as="h1">{selected.title}</Modal.Title>
           <br></br>
-          <img className="modal-image" src={selected.image}></img>
-          {selected.imageBeta ? <img className="modal-image-hover" src={selected.imageBeta}></img> : ""}
+          {!selected.aboutMe ? <img className="modal-image" src={selected.image}></img> : ""}
+          {selected.imageBeta && !selected.aboutMe ? <img className="modal-image-hover" src={selected.imageBeta}></img> : ""}
           <br></br>
             <Modal.Title style={{display:"flex", justifyContent:"space-evenly", flexWrap:"wrap"}} as="ul">{selected.technologies ? selected.technologies.map((tech) => <li className="mx-3">{tech}</li>) : ""}</Modal.Title>
         </Modal.Header>
