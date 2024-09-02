@@ -3,7 +3,7 @@
         "title":"blank"
     },
     {
-        "title": "M-M.Institute",
+        "title": "M-M.Social",
         "description": "A MERN stack microblogging platform. Users have the ability to register accounts, create and tag posts, upload images, follow other users for their personalized feed, like posts, and quote other posts in their own. Makes use of a React Router frontend which interacts with a REST API(MongoDB, Express, Node) backend, called M-M.Api.",
         "image": "/assets/images/m-minstitute-alpha.png",
         "repo":"https://github.com/the-neighbor/M-M.Institute.2023",
@@ -37,5 +37,33 @@
         "description": "A community recipe tracker. Users have the ability to view, add, edit, or delete recipes, their instructions, and their ingredients. The application consists of a Bootstrap frontend which interacts with a MySQL database through a REST API made using Node and Express. The application also makes uses of googles custom search engine API to provide users with images of each recipe automatically in the event that one is not provided manually with the recipe submission.",
         "image": "https://raw.githubusercontent.com/the-neighbor/M-M.RecipeTracker/main/images/alpha.png",
         "repo":"https://github.com/the-neighbor/M-M.RecipeTracker"
+    }
+    {
+        "title": "M-M.Radio",
+        "description": "An internet radio station. Users have the ability to listen to a live stream of music, view the current song playing, and view scheduled segments/events. The application consists of a React frontend with client side routing to support multiple pages. The radio station itself is hosted on a separate server and is streamed to the client using the icecast protocol.",
+        "image": "https://raw.githubusercontent.com/the-neighbor/M-M.RadioPlayer/main/images/alpha.png",
+        "repo":"https://github.com/the-neighbor/M-M.RadioPlayer"
+    },
+    {
+        "title": "M-M.Institute",
+        "description": "A web page for a fictional institution. The page is built using HTML, CSS, and JavaScript with the React library, and allows the user to browse courses for different interests.",
+        "image": "/assets/images/m-minstitute-alpha.png",
+        "repo":"",
+        "live":""
+    },
+    {
+        "title": "M-M.Api",
+        "description": "A REST API for the M-M.Social platform. The API is responsible for handling user authentication, account creation, and creating and interacting with blog posts. The API is built using Node and Express, and interacts with a MongoDB database.",
+        "image": "/assets/images/m-minstitute-alpha.png",
+        "repo":"https://github.com/the-neighbor/M-M.Api",
+        "live":""
+    },
+    {
+        "title": "M-M.Gallery",
+        "description": "A gallery of art work. The gallery is built using React and allows the user to view different pieces of original artwork created at the institute, and displays information about each piece in a modal when clicked.",
+        "image": "/assets/images/gallery-alpha.png",
+        "imageBeta": "/assets/images/gallery-beta.png",
+        "repo":"https://github.com/the-neighbor/M-M.Gallery",
+        "live":""
     }
 ]
