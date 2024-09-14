@@ -37,7 +37,7 @@
         "description": "A community recipe tracker. Users have the ability to view, add, edit, or delete recipes, their instructions, and their ingredients. The application consists of a Bootstrap frontend which interacts with a MySQL database through a REST API made using Node and Express. The application also makes uses of googles custom search engine API to provide users with images of each recipe automatically in the event that one is not provided manually with the recipe submission.",
         "image": "https://raw.githubusercontent.com/the-neighbor/M-M.RecipeTracker/main/images/alpha.png",
         "repo":"https://github.com/the-neighbor/M-M.RecipeTracker"
-    }
+    },
     {
         "title": "M-M.Radio",
         "description": "An internet radio station. Users have the ability to listen to a live stream of music, view the current song playing, and view scheduled segments/events. The application consists of a React frontend with client side routing to support multiple pages. The radio station itself is hosted on a separate server and is streamed to the client using the icecast protocol.",
