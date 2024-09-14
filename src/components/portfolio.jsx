@@ -43,14 +43,26 @@ export default function PortfolioPage(props) {
   // }
   function handleNext() {
     const pages = Math.ceil(projects.length / pageLength) - 1;
-    setPage(Math.min(page + 1, pages-1));
-    setAnimation("rotateRight")
+    if (page >= pages-1) {
+      setAnimation ("shake");
+      setTimeout(() => {setAnimation("")}, 500)
+    }
+    else {
+    setAnimation("loading")
+    setTimeout(() => {setPage(Math.min(page + 1, pages-1))}, 250)
     setTimeout(() => {setAnimation("")}, 500)
+    }
   }
   function handlePrev() {
-    setPage(Math.max(page - 1, 0));
-    setAnimation("rotateLeft")
+    if (page <= 0) {
+      setAnimation ("shake");
+      setTimeout(() => {setAnimation("")}, 500)
+    }
+    else {
+    setAnimation("loading")
+    setTimeout(() => {setPage(Math.max(page - 1, 0))}, 250)
     setTimeout(() => {setAnimation("")}, 500)
+    }
   }
   var elements = [];
   var pageLength = 4;
@@ -74,10 +86,12 @@ export default function PortfolioPage(props) {
     }
     elements.push(
       <div key={i + 1} className={"portfolio div" + (i + 1)} onClick={()=>{console.log(project);setSelected({...project});handleShow()}}>
+        <div className="project-contents">
         <img className="project-image" src={project.image}></img>
         <img className="project-image-hover" src={project.imageBeta}></img>
         <div className="project-body">
           <h4>{project.title}</h4>
+        </div>
         </div>
       </div>
     );
