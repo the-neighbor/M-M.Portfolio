@@ -44,7 +44,7 @@ body {
     display: none;
 }
 
-@keyframes rotateLeft {
+/* @keyframes rotateLeft {
     0% {
         transform: rotate(45deg);
     }
@@ -73,7 +73,7 @@ body {
 }
 .rotateRight {
     animation: rotateRight 0.5s ease-in-out;
-}
+} */
 
 .parent {
     transform:rotate(45deg);
